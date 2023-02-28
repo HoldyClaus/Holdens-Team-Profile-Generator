@@ -1,20 +1,20 @@
 const Intern = require("../lib/Intern");
 
-const intern = new Intern('Holden2', '3855', 'hac0212@gmail.com', 'UTA');
+const intern = new Intern('Holden', '8010', 'hac0212@gmail.com', 'UTA');
 
 test('test if we can get constructor values for Intern object', () => {
-    expect(Intern.name).toBe('Holden2');
-    expect(Intern.id).toBe('3855');
+    expect(Intern.name).toBe('Holden');
+    expect(Intern.id).toBe('8010');
     expect(Intern.email).toBe('hac0212@gmail.com');
     expect(Intern.school).toBe('UTA');
 });
 
 test('test if we can get name from getName', () => {
-    expect(Intern.getName()).toBe('Holden2')
+    expect(Intern.getName()).toBe('Holden')
 });
 
 test('test if we can get name from getID', () => {
-    expect(Intern.getID()).toBe('3855')
+    expect(Intern.getID()).toBe('8010')
 });
 
 test('test if we can get name from getEmail', () => {
