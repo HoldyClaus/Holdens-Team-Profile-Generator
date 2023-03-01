@@ -92,10 +92,8 @@ const promptMenu = () => {
             }
         });
 };
-
 const promptEngineer = () => {
     console.log(`Add a Engineer`);
-
     return inquirer.prompt([
         {
             type: 'input',
@@ -156,10 +154,8 @@ const promptEngineer = () => {
         promptMenu();
     })
 };
-
 const promptIntern = () => {
     console.log(`Add a Intern`);
-
     return inquirer.prompt([
         {
             type: 'input',
@@ -220,14 +216,11 @@ const promptIntern = () => {
         promptMenu();
     })
 };
-
 const buildTeam = () => {
     console.log('Well done');
-
     if (!fs.existsSync(OUTPUT_DIR)) {
         fs.mkdirSync(OUTPUT_DIR)
     }
     fs.writeFileSync(outputPath, generateSite(teamMembers), "utf-8");
 }
-
 promptManager();
